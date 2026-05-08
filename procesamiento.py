@@ -1,4 +1,5 @@
 def procesar_canciones(datos, limite=10):
+    """Paso 3: limpia y deja solo campos útiles."""
     if "data" not in datos:
         return []
 
@@ -6,9 +7,9 @@ def procesar_canciones(datos, limite=10):
         {
             "titulo": c["title"],
             "artista": c["artist"]["name"],
-            "album": c["album"]["title"]
-            "duracion_seg": c.get("duration", 0),
-            "rank": c.get("rank", 0)
+            "album": c["album"]["title"],
+            "duracion_seg": c["duration"],
+            "rank": c["rank"]
         }
         for c in datos["data"][:limite]
     ]
