@@ -12,6 +12,7 @@ def main():
 
     grafica_albumes(canciones)
     grafica_artistas(canciones)
+    grafica_duracion(canciones)
 
 if __name__ == "__main__":
     main()
