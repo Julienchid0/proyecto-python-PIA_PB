@@ -3,7 +3,7 @@ import requests
 def obtener_datos():
     """Descarga y retorna datos de JSON de la API de Deezer."""
 
-    url = "https://api.deezer.com/search?q=soda+stereo"
+    url = "https://api.deezer.com/search?q=rock"
 
     respuesta = requests.get(url)
     
