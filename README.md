@@ -15,7 +15,7 @@ Se utilizó Deezer APi https://api.deezer.com
 3. Extrae información relevante: (título de la canción, artista, álbum)
 4. Usa datos para imprimir resultados y generar gráficas.
 
-Gráfica 1:
+Gráfica 1: la primera gráfica cuenta canciones contiene cada álbum
 Gráfica 2:
 Gráfica 3:
 
