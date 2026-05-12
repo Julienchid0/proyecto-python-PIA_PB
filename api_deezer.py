@@ -12,12 +12,3 @@ def obtener_datos():
         return datos
     else:
         return {"error": "No se pudo obtener la información"}
-
-if __name__ == "__main__":
-    datos = obtener_datos()
-
-    for cancion in datos.get("data", [])[:5]:
-        print("Canción:", cancion["title"])
-        print("Artista:", cancion["artist"]["name"])
-        print("Álbum:", cancion["album"]["title"])
-        print("-" * 30)
