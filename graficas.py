@@ -40,15 +40,15 @@ def grafica_artistas(canciones):
 
 # GRÁFICA 3: 
 def grafica_duracion(canciones):
-    duraciones = [c["duracion"] for c in canciones]
-    reproducciones = [c["reproducciones"] for c in canciones]
+    duraciones = [c["duracion_seg"] for c in canciones]
+    reproducciones = [c["rank"] for c in canciones]
 
     plt.figure(figsize=(10, 6))
     plt.scatter(duraciones, reproducciones, alpha=0.5, color="purple")
     
     plt.title("Relación: Duración vs Reproducciones")
     plt.xlabel("Duración (segundos)")
-    plt.ylabel("Número de Reproducciones")
+    plt.ylabel("Rank")
     plt.grid(True) # Ayuda a leer mejor los puntos
     plt.savefig("grafica3.png")
     plt.show()
